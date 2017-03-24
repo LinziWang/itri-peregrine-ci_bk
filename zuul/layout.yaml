@@ -69,7 +69,7 @@ projects:
       # Uncomment this job when you have a jenkins slave running and want to
       # test a full Tempest run within devstack.
       - dsvm-tempest-full
-   - name: openstack/neutron
+   - name: openstack/networking-peregrine
     check:
       # Remove this after successfully verifying communication with upstream
       # and seeing a posted successful review.
