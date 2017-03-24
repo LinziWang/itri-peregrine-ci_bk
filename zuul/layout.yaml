@@ -56,6 +56,8 @@ pipelines:
 jobs:
   - name: ^dsvm-tempest.*$
     parameter-function: single_use_node
+  - name: dsvm-tempest-ITRI-Peregrine-neutron-driver
+    parameter-function: single_use_node
 
 projects:
   - name: openstack-dev/ci-sandbox
@@ -67,3 +69,8 @@ projects:
       # Uncomment this job when you have a jenkins slave running and want to
       # test a full Tempest run within devstack.
       - dsvm-tempest-full
+   - name: openstack/neutron
+    check:
+      # Remove this after successfully verifying communication with upstream
+      # and seeing a posted successful review.
+      - dsvm-tempest-ITRI-Peregrine-neutron-driver
