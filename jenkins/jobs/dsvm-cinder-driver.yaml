@@ -1,10 +1,10 @@
 - job-template:
-    name: 'dsvm-tempest-my-cinder-driver'
+    name: 'dsvm-tempest-ITRI-Peregrine-neutron-driver'
     node: '{node}'
 
     wrappers:
       - timeout:
-          timeout: 125
+          timeout: 240
           fail: true
       - timestamps
 
