@@ -19,7 +19,7 @@
           
           export PYTHONUNBUFFERED=true
           export DEVSTACK_GATE_NEUTRON=1
-          export DEVSTACK_GATE_TEMPEST_FULL=1
+          export DEVSTACK_GATE_TEMPEST_REGEX='(?!.*\[.*\bslow\b.*\])((network)|(neutron))'
           export PROJECTS="openstack/networking-peregrine $PROJECTS"
           
           export DEVSTACK_LOCAL_CONFIG="enable_plugin networking-peregrine git://git.openstack.org/openstack/networking-peregrine"
