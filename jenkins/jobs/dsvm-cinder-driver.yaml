@@ -22,7 +22,7 @@
           export DEVSTACK_GATE_TEMPEST_FULL=1
           export PROJECTS="openstack/networking-peregrine $PROJECTS"
           
-          export DEVSTACK_LOCAL_CONFIG="enable_plugin networking-vpp git://git.openstack.org/openstack/networking-peregrine"
+          export DEVSTACK_LOCAL_CONFIG="enable_plugin networking-peregrine git://git.openstack.org/openstack/networking-peregrine"
           
           export KEEP_LOCALRC=true
 
